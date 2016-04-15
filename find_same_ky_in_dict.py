@@ -19,4 +19,5 @@ b = {
 
 print a.keys()# & b.keys()
 print b.keys()
-a.keys() - b.keys()
+#a.items() - b.items()
+print {key:a[key] for key in a.keys() - {"A","C"}}
